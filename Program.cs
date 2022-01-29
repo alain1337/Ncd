@@ -18,7 +18,7 @@ namespace Ncd
             }
 
             var dirs = args[0].Split('\\');
-            var dirpaths = new[] { @"C:\Users\abart\OneDrive\Source", @"C:\Users\abart\OneDrive\Source\Tools", @"C:\Users\abart\OneDrive\Source\csmirror" };
+            var dirpaths = String.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("NCD_PATH")) ? Array.Empty<string>() : Environment.GetEnvironmentVariable("NCD_PATH").Split(';');
 
             var found = DirectoryFinder.Find(Directory.GetCurrentDirectory(), dirs);
             if (!found.Any())
