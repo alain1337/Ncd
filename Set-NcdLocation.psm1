@@ -1,4 +1,4 @@
-function Get-Directory {
+function Set-NcdLocation {
     param
     (
         [string]$path,
@@ -14,6 +14,6 @@ function Get-Directory {
     }
 }
 
-Export-ModuleMember -Function Get-Directory
-Set-Alias -Name ncd -Value Get-Directory
+Export-ModuleMember -Function Set-NcdLocation
+Set-Alias -Name ncd -Value Set-NcdLocation
 Export-ModuleMember -Alias * -Function *
