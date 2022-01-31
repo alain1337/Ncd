@@ -6,7 +6,7 @@ function Set-NcdLocation {
     )
 
     $out = (C:\Users\abart\OneDrive\Source\Ncd\bin\Debug\Ncd.exe $path $selector)
-    if ($?) {
+    if ($LastExitCode -eq 0) {
         Set-Location $out
     }
     else {
