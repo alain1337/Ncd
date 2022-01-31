@@ -3,7 +3,7 @@ Comfortable NCD like directory changer for PowerShell
 
 ## Install
 
-1. Import-Module Get-Directory.psm1
+1. Import-Module Set-NcdLocation.psm1
 2. Set NCD_PATH environment variable
 
 ## Usage
