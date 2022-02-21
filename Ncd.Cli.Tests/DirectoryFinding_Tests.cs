@@ -6,11 +6,11 @@ using Xunit.Abstractions;
 
 namespace Ncd.Cli.Tests
 {
-    public class UnitTest1
+    public class DirectoryFinding_Tests
     {
 
 
-        public UnitTest1(ITestOutputHelper testOutputHelper)
+        public DirectoryFinding_Tests(ITestOutputHelper testOutputHelper)
         {
             _testOutputHelper = testOutputHelper;
         }
