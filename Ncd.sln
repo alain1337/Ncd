@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ncd", "Ncd.csproj", "{B00F9C99-621E-4A1F-B748-0C8D13F1084D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ncd.Cli", "Ncd.Cli\Ncd.Cli.csproj", "{534F2EDB-3774-485E-A111-8BE873986087}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "More Files", "More Files", "{E0101472-A647-40D4-814D-00F467A08B0E}"
+	ProjectSection(SolutionItems) = preProject
+		Set-NcdLocation.psm1 = Set-NcdLocation.psm1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ncd.Cli.Tests", "Ncd.Cli.Tests\Ncd.Cli.Tests.csproj", "{8307F7DC-1752-44D7-8C34-850C7D4BEFB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{496E64C8-DBC5-4A55-B59C-08BDB2D5554C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +23,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B00F9C99-621E-4A1F-B748-0C8D13F1084D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B00F9C99-621E-4A1F-B748-0C8D13F1084D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B00F9C99-621E-4A1F-B748-0C8D13F1084D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B00F9C99-621E-4A1F-B748-0C8D13F1084D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{534F2EDB-3774-485E-A111-8BE873986087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{534F2EDB-3774-485E-A111-8BE873986087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{534F2EDB-3774-485E-A111-8BE873986087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{534F2EDB-3774-485E-A111-8BE873986087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8307F7DC-1752-44D7-8C34-850C7D4BEFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8307F7DC-1752-44D7-8C34-850C7D4BEFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8307F7DC-1752-44D7-8C34-850C7D4BEFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8307F7DC-1752-44D7-8C34-850C7D4BEFB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {20497ACC-3911-428C-8714-3BDEEC183FC6}
+		SolutionGuid = {31AE8EFE-2598-4FBC-B09A-93B461AEB135}
 	EndGlobalSection
 EndGlobal
